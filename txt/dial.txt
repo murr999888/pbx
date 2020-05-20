@@ -1,0 +1,10 @@
+in
+Wed Feb 13 2019 11:04:13 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"Begin","channel":"SIP/3002-00002e7d","destination":"SIP/102-00002e7f","calleridnum":"380972238055","calleridname":"380972238055","connectedlinenum":"<unknown>","connectedlinename":"<unknown>","uniqueid":"1550048651.16877","destuniqueid":"1550048653.16879","dialstring":"102"}
+
+out
+Wed Feb 13 2019 11:04:41 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"Begin","channel":"SIP/101-00002e81","destination":"SIP/3001-00002e82","calleridnum":"3001","calleridname":"<unknown>","connectedlinenum":"0681553628","connectedlinename":"CID:3001","uniqueid":"1550048681.16881","destuniqueid":"1550048681.16882","dialstring":"3001/100681553628"}
+
+end 
+
+Wed Feb 13 2019 11:04:27 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"End","channel":"SIP/3005-00002e7e","uniqueid":"1550048651.16878","dialstatus":"ANSWER"}
+Wed Feb 13 2019 11:05:24 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"End","channel":"SIP/101-00002e85","uniqueid":"1550048713.16885","dialstatus":"CANCEL"}

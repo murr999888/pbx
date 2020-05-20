@@ -1,0 +1,1 @@
+Wed Feb 13 2019 11:04:13 GMT+0200 (EET) {"event":"NewCallerid","privilege":"call,all","channel":"SIP/3002-00002e7d","calleridnum":"380972238055","calleridname":"","uniqueid":"1550048651.16877","cid-callingpres":"0 (Presentation Allowed, Not Screened)"}

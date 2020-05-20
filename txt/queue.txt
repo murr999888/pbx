@@ -1,0 +1,91 @@
+Fri Feb 22 2019 18:06:59 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"SIP/3003-000009e2","channelstate":"0","channelstatedesc":"Down","calleridnum":"380671119686","calleridname":"380671119686","accountcode":"","exten":"3003","context":"from-trunk-sip-3003","uniqueid":"1550851619.3036"}
+Fri Feb 22 2019 18:06:59 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"SIP/3003-000009e2","channelstate":"4","channelstatedesc":"Ring","calleridnum":"380671119686","calleridname":"380671119686","connectedlinenum":"","connectedlinename":"","uniqueid":"1550851619.3036"}
+Fri Feb 22 2019 18:07:00 GMT+0200 (EET) {"event":"NewCallerid","privilege":"call,all","channel":"SIP/3003-000009e2","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","uniqueid":"1550851619.3036","cid-callingpres":"0 (Presentation Allowed, Not Screened)"}
+
+Fri Feb 22 2019 18:07:00 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"SIP/113-000009e3","channelstate":"0","channelstatedesc":"Down","calleridnum":"113","calleridname":"Dispetcher-113","accountcode":"","exten":"","context":"from-internal","uniqueid":"1550851620.3037"}
+Fri Feb 22 2019 18:07:00 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"Begin","channel":"SIP/3003-000009e2","destination":"SIP/113-000009e3","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"<unknown>","connectedlinename":"<unknown>","uniqueid":"1550851619.3036","destuniqueid":"1550851620.3037","dialstring":"113"}
+Fri Feb 22 2019 18:07:02 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"SIP/113-000009e3","channelstate":"5","channelstatedesc":"Ringing","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","uniqueid":"1550851620.3037"}
+Fri Feb 22 2019 18:07:15 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"SIP/113-000009e3","uniqueid":"1550851620.3037","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","accountcode":"","cause":"16","cause-txt":"Normal Clearing"}
+Fri Feb 22 2019 18:07:15 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"End","channel":"SIP/3003-000009e2","uniqueid":"1550851619.3036","dialstatus":"NOANSWER"}
+
+Fri Feb 22 2019 18:07:15 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"SIP/3003-000009e2","channelstate":"6","channelstatedesc":"Up","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","uniqueid":"1550851619.3036"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Join","privilege":"call,all","channel":"SIP/3003-000009e2","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","queue":"1000","position":"1","count":"1","uniqueid":"1550851619.3036"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"MusicOnHold","privilege":"call,all","state":"Start","channel":"SIP/3003-000009e2","uniqueid":"1550851619.3036","class":"For-Call-Center"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"Local/102@from-queue-000000fd;1","channelstate":"0","channelstatedesc":"Down","calleridnum":"","calleridname":"","accountcode":"","exten":"102","context":"from-queue","uniqueid":"1550851639.3038"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"Local/102@from-queue-000000fd;2","channelstate":"4","channelstatedesc":"Ring","calleridnum":"","calleridname":"","accountcode":"","exten":"102","context":"from-queue","uniqueid":"1550851639.3039"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"NewCallerid","privilege":"call,all","channel":"Local/102@from-queue-000000fd;1","calleridnum":"113","calleridname":"Dispetcher-113","uniqueid":"1550851639.3038","cid-callingpres":"0 (Presentation Allowed, Not Screened)"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"LocalBridge","privilege":"call,all","channel1":"Local/102@from-queue-000000fd;1","channel2":"Local/102@from-queue-000000fd;2","uniqueid1":"1550851639.3038","uniqueid2":"1550851639.3039","context":"from-queue","exten":"102","localoptimization":"No"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"HangupRequest","privilege":"call,all","channel":"Local/102@from-queue-000000fd;2","uniqueid":"1550851639.3039"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"Local/102@from-queue-000000fd;1","uniqueid":"1550851639.3038","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","accountcode":"","cause":"0","cause-txt":"Unknown"}
+
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"Local/101@from-queue-000000fe;1","channelstate":"0","channelstatedesc":"Down","calleridnum":"","calleridname":"","accountcode":"","exten":"101","context":"from-queue","uniqueid":"1550851639.3040"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"Local/101@from-queue-000000fe;2","channelstate":"4","channelstatedesc":"Ring","calleridnum":"","calleridname":"","accountcode":"","exten":"101","context":"from-queue","uniqueid":"1550851639.3041"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"NewCallerid","privilege":"call,all","channel":"Local/101@from-queue-000000fe;1","calleridnum":"113","calleridname":"Dispetcher-113","uniqueid":"1550851639.3040","cid-callingpres":"0 (Presentation Allowed, Not Screened)"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"LocalBridge","privilege":"call,all","channel1":"Local/101@from-queue-000000fe;1","channel2":"Local/101@from-queue-000000fe;2","uniqueid1":"1550851639.3040","uniqueid2":"1550851639.3041","context":"from-queue","exten":"101","localoptimization":"No"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"Local/102@from-queue-000000fd;2","channelstate":"7","channelstatedesc":"Busy","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","uniqueid":"1550851639.3039"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"SoftHangupRequest","privilege":"call,all","channel":"Local/102@from-queue-000000fd;2","uniqueid":"1550851639.3039","cause":"16"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"Local/102@from-queue-000000fd;2","uniqueid":"1550851639.3039","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","accountcode":"","cause":"16","cause-txt":"Normal Clearing"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*101*1000","context":"ext-queues","hint":"Queue:1000","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*101","context":"ext-queues","hint":"Queue:1000&Queue:1101","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*102*1000","context":"ext-queues","hint":"Queue:1000","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*102","context":"ext-queues","hint":"Queue:1000","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*110*1000","context":"ext-queues","hint":"Queue:1000","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*110","context":"ext-queues","hint":"Queue:1000","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*113*1000","context":"ext-queues","hint":"Queue:1000","status":"8"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"ExtensionStatus","privilege":"call,all","exten":"*47*113","context":"ext-queues","hint":"Queue:1000&Queue:1113","status":"8"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"HangupRequest","privilege":"call,all","channel":"Local/101@from-queue-000000fe;2","uniqueid":"1550851639.3041"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"Local/101@from-queue-000000fe;1","uniqueid":"1550851639.3040","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","accountcode":"","cause":"0","cause-txt":"Unknown"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"Local/113@from-queue-000000ff;1","channelstate":"0","channelstatedesc":"Down","calleridnum":"","calleridname":"","accountcode":"","exten":"113","context":"from-queue","uniqueid":"1550851639.3042"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"Local/113@from-queue-000000ff;2","channelstate":"4","channelstatedesc":"Ring","calleridnum":"","calleridname":"","accountcode":"","exten":"113","context":"from-queue","uniqueid":"1550851639.3043"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"NewCallerid","privilege":"call,all","channel":"Local/113@from-queue-000000ff;1","calleridnum":"113","calleridname":"Dispetcher-113","uniqueid":"1550851639.3042","cid-callingpres":"0 (Presentation Allowed, Not Screened)"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"LocalBridge","privilege":"call,all","channel1":"Local/113@from-queue-000000ff;1","channel2":"Local/113@from-queue-000000ff;2","uniqueid1":"1550851639.3042","uniqueid2":"1550851639.3043","context":"from-queue","exten":"113","localoptimization":"No"}
+
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"Local/101@from-queue-000000fe;2","channelstate":"7","channelstatedesc":"Busy","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","uniqueid":"1550851639.3041"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"SoftHangupRequest","privilege":"call,all","channel":"Local/101@from-queue-000000fe;2","uniqueid":"1550851639.3041","cause":"16"}
+Fri Feb 22 2019 18:07:19 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"Local/101@from-queue-000000fe;2","uniqueid":"1550851639.3041","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","accountcode":"","cause":"16","cause-txt":"Normal Clearing"}
+
+
+Fri Feb 22 2019 18:07:20 GMT+0200 (EET) {"event":"NewCallerid","privilege":"call,all","channel":"Local/113@from-queue-000000ff;2","calleridnum":"380671119686","calleridname":"M0:Кронштадтская ул., 13- 21","uniqueid":"1550851639.3043","cid-callingpres":"0 (Presentation Allowed, Not Screened)"}
+
+Fri Feb 22 2019 18:07:20 GMT+0200 (EET) {"event":"Newchannel","privilege":"call,all","channel":"SIP/113-000009e4","channelstate":"0","channelstatedesc":"Down","calleridnum":"113","calleridname":"Dispetcher-113","accountcode":"","exten":"","context":"from-internal","uniqueid":"1550851640.3044"}
+
+Fri Feb 22 2019 18:07:20 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"Begin","channel":"Local/113@from-queue-000000ff;2","destination":"SIP/113-000009e4","calleridnum":"380671119686","calleridname":"M0:Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","uniqueid":"1550851639.3043","destuniqueid":"1550851640.3044","dialstring":"113"}
+Fri Feb 22 2019 18:07:20 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"Local/113@from-queue-000000ff;1","channelstate":"5","channelstatedesc":"Ringing","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","uniqueid":"1550851639.3042"}
+
+Fri Feb 22 2019 18:07:22 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"SIP/113-000009e4","channelstate":"5","channelstatedesc":"Ringing","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"M0:Кронштадтская ул., 13- 21","uniqueid":"1550851640.3044"}
+
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"SIP/113-000009e4","channelstate":"6","channelstatedesc":"Up","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"M0:Кронштадтская ул., 13- 21","uniqueid":"1550851640.3044"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"Local/113@from-queue-000000ff;1","channelstate":"6","channelstatedesc":"Up","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","uniqueid":"1550851639.3042"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"MusicOnHold","privilege":"call,all","state":"Stop","channel":"SIP/3003-000009e2","uniqueid":"1550851619.3036"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Newstate","privilege":"call,all","channel":"Local/113@from-queue-000000ff;2","channelstate":"6","channelstatedesc":"Up","calleridnum":"380671119686","calleridname":"M0:Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","uniqueid":"1550851639.3043"}
+
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Leave","privilege":"call,all","channel":"SIP/3003-000009e2","queue":"1000","count":"0","position":"1","uniqueid":"1550851619.3036"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Bridge","privilege":"call,all","bridgestate":"Link","bridgetype":"core","channel1":"Local/113@from-queue-000000ff;2","channel2":"SIP/113-000009e4","uniqueid1":"1550851639.3043","uniqueid2":"1550851640.3044","callerid1":"380671119686","callerid2":"113"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Bridge","privilege":"call,all","bridgestate":"Link","bridgetype":"core","channel1":"SIP/3003-000009e2","channel2":"Local/113@from-queue-000000ff;1","uniqueid1":"1550851619.3036","uniqueid2":"1550851639.3042","callerid1":"380671119686","callerid2":"113"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Bridge","privilege":"call,all","bridgestate":"Unlink","bridgetype":"core","channel1":"SIP/3003-000009e2","channel2":"Local/113@from-queue-000000ff;1","uniqueid1":"1550851619.3036","uniqueid2":"1550851639.3042","callerid1":"380671119686","callerid2":"113"}
+Fri Feb 22 2019 18:07:27 GMT+0200 (EET) {"event":"Bridge","privilege":"call,all","bridgestate":"Link","bridgetype":"core","channel1":"SIP/3003-000009e2","channel2":"Local/113@from-queue-000000ff;1","uniqueid1":"1550851619.3036","uniqueid2":"1550851639.3042","callerid1":"380671119686","callerid2":"113"}
+
+
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"HangupRequest","privilege":"call,all","channel":"SIP/3003-000009e2","uniqueid":"1550851619.3036"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Bridge","privilege":"call,all","bridgestate":"Unlink","bridgetype":"core","channel1":"SIP/3003-000009e2","channel2":"Local/113@from-queue-000000ff;1","uniqueid1":"1550851619.3036","uniqueid2":"1550851639.3042","callerid1":"380671119686","callerid2":"113"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"HangupRequest","privilege":"call,all","channel":"Local/113@from-queue-000000ff;2","uniqueid":"1550851639.3043"}
+
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Bridge","privilege":"call,all","bridgestate":"Unlink","bridgetype":"core","channel1":"Local/113@from-queue-000000ff;2","channel2":"SIP/113-000009e4","uniqueid1":"1550851639.3043","uniqueid2":"1550851640.3044","callerid1":"380671119686","callerid2":"113"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"Local/113@from-queue-000000ff;1","uniqueid":"1550851639.3042","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"Кронштадтская ул., 13- 21","accountcode":"","cause":"0","cause-txt":"Unknown"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"SoftHangupRequest","privilege":"call,all","channel":"SIP/3003-000009e2","uniqueid":"1550851619.3036","cause":"16"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"SIP/113-000009e4","uniqueid":"1550851640.3044","calleridnum":"113","calleridname":"Dispetcher-113","connectedlinenum":"380671119686","connectedlinename":"M0:Кронштадтская ул., 13- 21","accountcode":"","cause":"16","cause-txt":"Normal Clearing"}
+
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Dial","privilege":"call,all","subevent":"End","channel":"Local/113@from-queue-000000ff;2","uniqueid":"1550851639.3043","dialstatus":"ANSWER"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"SoftHangupRequest","privilege":"call,all","channel":"Local/113@from-queue-000000ff;2","uniqueid":"1550851639.3043","cause":"16"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"SIP/3003-000009e2","uniqueid":"1550851619.3036","calleridnum":"380671119686","calleridname":"Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","accountcode":"","cause":"16","cause-txt":"Normal Clearing"}
+Fri Feb 22 2019 18:07:46 GMT+0200 (EET) {"event":"Hangup","privilege":"call,all","channel":"Local/113@from-queue-000000ff;2","uniqueid":"1550851639.3043","calleridnum":"380671119686","calleridname":"M0:Кронштадтская ул., 13- 21","connectedlinenum":"113","connectedlinename":"Dispetcher-113","accountcode":"","cause":"16","cause-txt":"Normal Clearing"}
+
