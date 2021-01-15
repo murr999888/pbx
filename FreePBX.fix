@@ -1,0 +1,34 @@
+extensions_override_freepbx.conf
+
+[macro-dialout-trunk]
+..................
+exten => s-BUSY,1,Noop(Dial failed due to trunk reporting BUSY - giving up)
+;exten => s-BUSY,n,Progress;добавлено
+exten => s-BUSY,n,Playtones(busy)
+exten => s-BUSY,n,Wait(5) ;добавлено
+exten => s-BUSY,n,StopPlaytones;добавлено
+exten => s-BUSY,n,UserEvent(AnnounceStart,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-BUSY,n,Playback(number,noanswer);добавлено
+exten => s-BUSY,n,Playback(zanjat,noanswer);добавлено
+exten => s-BUSY,n,UserEvent(AnnounceStop,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-BUSY,n,UserEvent(Busy,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-BUSY,n,Busy(3) ;было 20
+
+exten => s-ANSWER,1,Noop(Call successfully answered - Hanging up now)
+exten => s-ANSWER,n,Macro(hangupcall,)
+
+exten => s-NOANSWER,1,Noop(Dial failed due to trunk reporting NOANSWER - giving up)
+exten => s-NOANSWER,n,Progress
+exten => s-NOANSWER,n,UserEvent(AnnounceStart,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-NOANSWER,n,Playback(number-not-answering,noanswer)
+exten => s-NOANSWER,n,UserEvent(AnnounceStop,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-NOANSWER,n,UserEvent(NoAnswer,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-NOANSWER,n,Congestion(20)
+
+exten => s-INVALIDNMBR,1,Noop(Dial failed due to trunk reporting Address Incomplete - giving up)
+exten => s-INVALIDNMBR,n,Progress
+exten => s-INVALIDNMBR,n,UserEvent(AnnounceStart,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-INVALIDNMBR,n,Playback(ss-noservice,noanswer)
+exten => s-INVALIDNMBR,n,UserEvent(AnnounceStop,uniqueid:${UNIQUEID})  ;<======= добавлено
+exten => s-INVALIDNMBR,n,Busy(20)
+..........................

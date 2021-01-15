@@ -1,0 +1,19 @@
+ if (event.event) {
+    // This is a Real-Event
+    event.event = Array.isArray(event.event) ? event.event.shift() : event.event;
+    event.event += ''; // Make Sure that this is always a string
+    emits.push(this.emit.bind(this, 'managerevent', event));
+    emits.push(this.emit.bind(this, event.event.toLowerCase(), event));
+    if (('userevent' === event.event.toLowerCase()) && event.userevent) {
+      var keys = Object.keys(event);
+      var body = keys[4];
+      var parsedBodyArr = body.split(':');
+      delete event[body];
+      event[parsedBodyArr[0]] = parsedBodyArr[1]; 
+      emits.push(this.emit.bind(this, 'userevent-' + event.userevent.toLowerCase(), event));
+    }
+
+  } else {
+    // Ooops I dont know what this is
+    emits.push(this.emit.bind(this, 'asterisk', event));
+  }
